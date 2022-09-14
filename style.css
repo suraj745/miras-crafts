@@ -1,0 +1,121 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --default: #ef2335;
+}
+html {
+  font-size: 62.55%;
+}
+
+body {
+  font-size: 1.6rem;
+  min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.topbar {
+  padding-block: 1rem;
+}
+
+.logo {
+  padding: 1rem;
+}
+.logo > img {
+  width: 20rem;
+  height: 7rem;
+  object-fit: cover;
+}
+
+.invoice_container {
+  height: 5rem;
+  background-color: var(--default);
+  position: relative;
+}
+
+body ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.invoice_container::after {
+  content: "INVOICE";
+  font-weight: bold;
+  font-size: 3rem;
+  right: 5rem;
+  color: var(--default);
+  padding-inline: clamp(1rem, 3vw, 2rem);
+
+  background-color: white;
+  position: absolute;
+
+  height: 100%;
+}
+
+.issued_left > li {
+  font-size: 1.8rem;
+}
+
+.issued_container {
+  padding-block: 3rem;
+}
+.issued_left > li > strong {
+  font-size: 2rem;
+}
+
+.issued_right > li > h1 {
+  font-size: clamp(3rem, 4vw, 2rem);
+}
+
+tr,
+th,
+td {
+  border: 0.01rem solid silver;
+  border-collapse: collapse;
+  padding-block: 1rem;
+}
+#pricing_table {
+  text-align: center;
+}
+
+#pricing_table tr {
+  font-size: 1.7rem;
+}
+#pricing_table tr:nth-child(odd) {
+  background-color: rgb(243, 240, 240);
+}
+
+#pricing_table_heading {
+  background-color: #ef2334 !important;
+  color: white;
+}
+
+#pricing_table_heading > th {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.table_bottom_left p {
+  font-size: 1.8rem;
+}
+
+.table_bottom_container {
+  padding-block: 4rem;
+}
+
+.table_bottom_right > li {
+  width: min(30%, 30rem);
+}
+
+.table_bottom_right > li > a {
+  font-weight: bold;
+}

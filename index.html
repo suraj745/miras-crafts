@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <section class="container topbar">
+      <section class="row">
+        <section class="logo">
+          <img src="/images/logo.jpeg" alt="logo" />
+        </section>
+      </section>
+    </section>
+
+    <section class="container invoice_container"></section>
+
+    <section class="container issued_container">
+      <section class="row justify-content-between align-items-center">
+        <ul class="col-6 issued_left">
+          <li>
+            <strong>ISSUED TO</strong>
+            <p>
+              Some Company <br />
+              123 Some Street <br />
+              Somewhere,CA 000000 <br />
+              +00 0000000000
+            </p>
+          </li>
+        </ul>
+        <ul class="col-6 issued_right">
+          <li class="text-end">
+            <h1 style="font-size: 2rem">Total:</h1>
+            <h1><span>₹ </span> <span>10,000</span></h1>
+          </li>
+        </ul>
+      </section>
+    </section>
+    <table class="container" id="pricing_table">
+      <tr id="pricing_table_heading">
+        <th>No</th>
+        <th>Description</th>
+        <th>Qty</th>
+        <th>Price</th>
+        <th>Subtotal</th>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>Lorem ipsum dolor, sit amet consectetur</td>
+        <td>2</td>
+        <td><span>₹</span><span>200</span></td>
+        <td><span>₹</span><span>200</span></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Lorem ipsum dolor, sit amet consectetur</td>
+        <td>2</td>
+        <td><span>₹</span><span>200</span></td>
+        <td><span>₹</span><span>200</span></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Lorem ipsum dolor, sit amet consectetur</td>
+        <td>2</td>
+        <td><span>₹</span><span>200</span></td>
+        <td><span>₹</span><span>200</span></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Lorem ipsum dolor, sit amet consectetur</td>
+        <td>2</td>
+        <td><span>₹</span><span>200</span></td>
+        <td><span>₹</span><span>200</span></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Lorem ipsum dolor, sit amet consectetur</td>
+        <td>2</td>
+        <td><span>₹</span><span>200</span></td>
+        <td><span>₹</span><span>200</span></td>
+      </tr>
+    </table>
+
+    <section class="container table_bottom_container">
+      <section class="row flex-column-reverse flex-lg-row">
+        <section class="col-lg-6 table_bottom_left pt-4 pt-lg-=">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+            iure quod atque, expedita sit enim rerum aliquid, nisi nobis nemo
+          </p>
+        </section>
+        <ul
+          class="col-lg-6 d-flex flex-column justify-content-center align-items-end table_bottom_right text-end"
+        >
+          <li class="d-flex align-items-center justify-content-between gap-4">
+            <a>TAX</a>
+            <h1><span>20</span>%</h1>
+          </li>
+          <li class="d-flex align-items-center justify-content-between gap-4">
+            <a>TOTAL</a>
+            <h1><span>₹</span><span>10,000</span></h1>
+          </li>
+        </ul>
+      </section>
+    </section>
+  </body>
+</html>
